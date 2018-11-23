@@ -6,6 +6,7 @@ import { LightboxModule } from '@ngx-gallery/lightbox';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LightboxExamComponent } from './lightbox-exam/lightbox-exam.component';
+import { GallerizeModule } from '@ngx-gallery/gallerize';
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,10 +16,9 @@ import { LightboxExamComponent } from './lightbox-exam/lightbox-exam.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    GalleryModule.forRoot(),
-    LightboxModule.forRoot({
-      panelClass: 'fullscreen'
-    }),
+    GalleryModule,
+    LightboxModule,
+    GallerizeModule
 
   ],
   providers: [],
