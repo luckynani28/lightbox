@@ -30,7 +30,7 @@ export class LightboxExamComponent implements OnInit {
 
     // Add custom gallery config to the lightbox (optional)
     lightboxRef.setConfig({
-      imageSize: ImageSize.Contain,
+//       imageSize: ImageSize.Contain,
       thumbPosition: ThumbnailsPosition.Bottom
     });
 
